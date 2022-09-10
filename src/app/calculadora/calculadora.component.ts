@@ -19,7 +19,12 @@ export class CalculadoraComponent implements OnInit {
   }
 
   takeValue(value: string): void {
-    this.calc += value;
+    if(this.calc !== '' && this.result !== ''){
+      this.clearDisplay();
+      this.calc += value;
+    }else{
+      this.calc += value;
+    }
     console.log(this.calc);
   }
 
