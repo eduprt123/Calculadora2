@@ -1,0 +1,54 @@
+<div class="calculator ">
+  <div class="calculator-container">
+    <div class="display-container">
+      <div class="result-container">
+        <input type="text" [value]="result" class="result">
+      </div>
+
+      <div class="calc-container">
+        <input type="text" [value]="calc" class="calc">
+      </div>
+    </div>
+
+    <div class="button-container">
+      <div class="numbers-container">
+        <div class="numbers">
+          <button (click)="takeValue('1')" class="button">1</button>
+          <button (click)="takeValue('2')" class="button">2</button>
+          <button (click)="takeValue('3')" class="button">3</button>
+        </div>
+
+        <div class="numbers">
+          <button (click)="takeValue('4')" class="button">4</button>
+          <button (click)="takeValue('5')" class="button">5</button>
+          <button (click)="takeValue('6')" class="button">6</button>
+        </div>
+
+        <div class="numbers">
+          <button (click)="takeValue('7')" class="button">7</button>
+          <button (click)="takeValue('8')" class="button">8</button>
+          <button (click)="takeValue('9')" class="button">9</button>
+        </div>
+      </div>
+
+      <div class="operations-container">
+        <div class="operations__div">
+          <div class="operations">
+            <button (click)="takeValue('+')" class="button">+</button>
+            <button (click)="takeValue('-')" class="button">-</button>
+          </div>
+
+          <div class="operations">
+            <button (click)="takeValue('*')" class="button">x</button>
+            <button (click)="takeValue('/')" class="button">/</button>
+          </div>
+        </div>
+
+        <div class="result__button-container">
+          <button (click)="clearDisplay()" class="clear-button">C</button>
+          <button (click)="takeResults()" class="result-button">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
